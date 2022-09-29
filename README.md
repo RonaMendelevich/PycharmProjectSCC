@@ -50,14 +50,14 @@ Example:
 
 'binary_read_SCC.py' file imports the graph from the file: 'binary_read_final_file.py'.
 'binary_read_final_file.py' computed the graph from a text file from the user: 'fun_fun.txt'
-In the text file each line represents the binary logical function for each variable respectively.
+In the text file each line represents the binary logical function for each variable respectively (except the first line).
 Example:
 
 ![image](https://user-images.githubusercontent.com/75082928/193056885-a816b02e-9027-41ff-bb82-c93d4c775bf0.png)
 
 
-*First line holds the number of 
-Line number 2 contains the binary logical function for variable number 2. (starts from 1 not zero)
+*First line holds the number of bits we will be working with. Line number 2 contains the binary logical function for variable number 1 and so on.  Each number in the text file represents a bit (starting from 1 not zero).
 
+*The available operators are: ['&', '|', '~']  (and, or, not). Its possible to add more by adding them to the operators array in the code file and adding a switch case for this particular operator added.
 
 
