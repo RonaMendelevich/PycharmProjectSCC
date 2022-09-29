@@ -60,4 +60,9 @@ Example:
 
 *The available operators are: ['&', '|', '~']  (and, or, not). Its possible to add more by adding them to the operators array in the code file and adding a switch case for this particular operator added.
 
+#### Lockstep.py
 
+Computes the SCC for a given graph in the code via lockstep algorithm which is implemented by BDD- BINARY DICISION DIAGRAM.
+About the Lockstep algorithm:
+For each node it marks 2 groups-the neighbors of vertex V, and the vertices of which V is a neighbor.Those groups are used in the Lockstep algorithm to compute the SCC. 
+After the SCC are computed, a new graph is build without these SCC, and runs the Lockstep algorithm on this new graph recursively.
